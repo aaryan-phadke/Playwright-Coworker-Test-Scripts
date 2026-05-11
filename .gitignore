@@ -1,0 +1,19 @@
+node_modules/
+playwright-report/
+test-results/
+playwright/.auth/
+.env
+.env.local
+*.log
+.DS_Store
+.vscode/
+.idea/
+
+# Office temp/lock files (created when Word has a .docx open)
+~$*
+
+# Debug leftover files from initial scaffold attempts
+write-test.txt
+.write-test
+*.tmp
+Playwright-Coworker-Test-Scripts/

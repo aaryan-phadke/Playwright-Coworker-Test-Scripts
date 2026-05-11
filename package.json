@@ -1,0 +1,27 @@
+{
+  "name": "sorigin-ams-playwright",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Playwright automation suite for Sorigin AMS portal (Wind login).",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:edge": "playwright test --project=msedge",
+    "test:all": "playwright test --project=chromium --project=firefox --project=msedge",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "report:docx": "node scripts/generate-docx-report.js",
+    "test:report": "node scripts/run-and-report.js",
+    "codegen": "playwright codegen https://ams.sorigin.app/signin"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^20.11.0",
+    "docx": "^8.5.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.4.0"
+  }
+}

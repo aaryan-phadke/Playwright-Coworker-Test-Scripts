@@ -1,0 +1,25 @@
+{
+  "name": "sorigin-ams-automation",
+  "version": "1.0.0",
+  "description": "Playwright automation suite for Sorigin AMS Web Portal (JIRA DA-1106)",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:chrome": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:edge": "playwright test --project=msedge",
+    "test:cross-browser": "playwright test --project=chromium --project=firefox --project=msedge",
+    "test:smoke": "playwright test tests/auth tests/regression/dashboard-smoke.spec.js",
+    "test:regression": "playwright test tests/regression/full-regression.spec.js",
+    "test:rbac": "playwright test tests/rbac",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "install:browsers": "playwright install chromium firefox msedge"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.0",
+    "dotenv": "^16.4.5"
+  }
+}
